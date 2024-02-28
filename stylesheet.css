@@ -8,44 +8,78 @@ body{
 .navbar{
     overflow: hidden;
     background-color: transparent;
+    opacity: 90%;
     position: fixed;
     top: 0;
     width: 100%;
 }
 .navbar a{
-    float: right;
-    display: block;
+    letter-spacing: 0.15em;
+    display: inline-block;
     text-align: center;
-    padding: 14px 20px;
+    padding: 15px 20px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    position: relative;
+   
     
 }
-a:hover{
-    color:#757575;
-    text-decoration: underline;
-}
+
 ul{
     list-style-type: none;
-    margin: 0;
+    margin: auto; 
     padding: 0;
+    display: table;
+    text-align: center;
 }
-#contact{
-    padding-right: 130px;
+li{
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
 }
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background:#757575;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
 #logo{
     text-align: left;
-    margin-inline-end: 860px;
+    margin-right: 900px;
     text-decoration: none;
     font-size: 30px;
     font-weight: bolder;
 }
+
+
+
+
+
 /*main heading section */
 #main-heading{
     color: #757575;
     margin: 250px 80px ;
     font-size: 30px;
+    letter-spacing: 0.1em;
+}
+.social-links a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 0.5em;
+}
+.social-links a:hover{
+    color: #757575;
 }
 span{
     color: rgb(255, 255, 255);
@@ -57,7 +91,143 @@ span{
     display: flex;
   }
 
-  .column img{
+.column img{
     max-width: 100%;
     height: auto;
+    margin-top: 50px;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+
+.column:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+
+
+
+
+/*About Section*/
+#about{
+    background-color:rgb(255, 255, 255) ;
+}
+.about-heading h1{
+    color: #011f41;
+    letter-spacing: 0.15em;
+    text-align: center;
+    padding-top: 20px;
+   
+}
+.about-cont{
+    color: #011f41;
+    text-align: left;
+    margin: 20px 80px ;
+    word-spacing: 0.2em;
+    margin-bottom: 50px;
+}
+.resume-heading{
+    color: #011f41;
+    letter-spacing: 0.15em;
+    text-align: center;
+    padding-top: 20px; 
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #757575;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    margin-top: 20px;
+  }
+  
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #011f41;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: -6.5%;
+    
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: #757575;
+    position: relative;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
   }
