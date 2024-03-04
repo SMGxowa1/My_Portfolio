@@ -64,22 +64,89 @@ a:after {
 
 
 
-
-
 /*main heading section */
 #main-heading{
     color: #757575;
     margin: 250px 80px ;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 0.1em;
 }
 .social-links a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     letter-spacing: 0.5em;
+    
+  
 }
-.social-links a:hover{
+.social-links > a:hover{
     color: #757575;
+    transform: translateY(5px);
+    box-shadow: none;
+}
+.resume{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.resume-button{
+
+  align-items: center;
+  background-color: #757575;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation
+ 
+}
+.resume-button:after{
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+.resume-button:hover:after {
+  transform: translate(0, 0);
+}
+
+.resume-button:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.resume-button:hover {
+  outline: 0;
+}
+.fa-solid{
+  color: rgb(255, 255, 255);
+  padding: 0 0 0 7px;
+}
+.resume-link a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+
 }
 span{
     color: rgb(255, 255, 255);
@@ -108,17 +175,15 @@ span{
 
 
 
-
-
-
 /*About Section*/
 #about{
-    background-color:rgb(255, 255, 255) ;
+    background-color:rgb(255, 255, 255);
 }
 .about-heading h1{
     color: #011f41;
     letter-spacing: 0.15em;
-    text-align: center;
+    text-align: left;
+    margin-left: 80px;
     padding-top: 20px;
    
 }
@@ -129,10 +194,24 @@ span{
     word-spacing: 0.2em;
     margin-bottom: 50px;
 }
+.interest-heading{
+  color: #011f41;
+    letter-spacing: 0.15em;
+    text-align: left;
+    padding-top: 20px;
+}
+.interest-cont{
+  color: #011f41;
+    text-align: left;
+    margin: 20px 0 50px;
+    word-spacing: 0.2em;
+    
+}
 .resume-heading{
     color: #011f41;
     letter-spacing: 0.15em;
-    text-align: center;
+    text-align: left;
+    margin: 20px 80px;
     padding-top: 20px; 
 }
 
@@ -230,4 +309,16 @@ span{
     position: relative;
     border-radius: 6px;
     color: rgb(255, 255, 255);
+  }
+
+
+  /* projects section */
+  #projects{
+    background-color:#011f41 ;
+  }
+  .projects-heading h1{
+    color: rgb(255, 255, 255);
+    margin: 20px 0 0 80px;
+    letter-spacing: 0.15em;
+    text-align: left;
   }
