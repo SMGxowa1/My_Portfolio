@@ -1,5 +1,6 @@
 body{
     background-color: #011f41 ;
+    background-image: url(src\images\pexels-jakub-novacek-924824.jpg);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@ body{
     overflow: hidden;
     background-color: transparent;
     opacity: 90%;
-    position: fixed;
+    position:relative;
     top: 0;
     width: 100%;
 }
@@ -70,6 +71,26 @@ a:after {
     margin: 250px 80px ;
     font-size: 25px;
     letter-spacing: 0.1em;
+}
+#main-heading h2{
+  width: 28ch;
+  animation: typing 5s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 .social-links a{
     color: rgb(255, 255, 255);
@@ -167,6 +188,7 @@ span{
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
   }
+  
 
 .column:hover img {
 	-webkit-filter: grayscale(0);
@@ -183,7 +205,7 @@ span{
     color: #011f41;
     letter-spacing: 0.15em;
     text-align: left;
-    margin: 20px 0 0 80px;
+    margin: 150px 0 0 80px;
    
 }
 .about-cont{
@@ -198,15 +220,15 @@ span{
     color: #011f41;
     letter-spacing: 0.15em;
     text-align: left;
-    margin: 20px 80px;
-    padding-top: 20px; 
+    margin: 0px 80px;
+    
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 60px 80px 0 110px;
   }
   
   /* The actual timeline (the vertical ruler) */
@@ -297,6 +319,32 @@ span{
     border-radius: 6px;
     color: rgb(255, 255, 255);
   }
+
+  /* skills */
+  .skills-heading{
+    color: #011f41;
+    letter-spacing: 0.15em;
+    text-align: left;
+    margin: 0px 80px;
+    padding-top: 20px; 
+  }
+ .skills-list{
+    list-style-type: none;
+    margin: auto; 
+    padding: 0;
+    display: table;
+    text-align: center;
+}
+.skills-list li{
+  letter-spacing: 0.15em;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+  font-size: 50px;
+  color: #011f41;
+}
+
 
 
   /* projects section */
