@@ -219,8 +219,8 @@ span{
 .resume-heading{
     color: #011f41;
     letter-spacing: 0.15em;
-    text-align: left;
-    margin: 0px 80px;
+    text-align: center;
+    
     
 }
 
@@ -250,6 +250,7 @@ span{
     background-color: inherit;
     width: 50%;
     margin-top: 20px;
+    
   }
   
   
@@ -270,6 +271,7 @@ span{
   /* Place the container to the left */
   .left {
     left: -6.5%;
+    
     
   }
   
@@ -303,7 +305,7 @@ span{
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #011f41 transparent transparent;
   }
   
   /* Fix the circle for containers on the right side */
@@ -318,15 +320,16 @@ span{
     position: relative;
     border-radius: 6px;
     color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 5px #011f41;
   }
 
   /* skills */
   .skills-heading{
     color: #011f41;
     letter-spacing: 0.15em;
-    text-align: left;
-    margin: 0px 80px;
-    padding-top: 20px; 
+    text-align: center;
+    margin-left: 80px;
+    padding-top: 20px;
   }
  .skills-list{
     list-style-type: none;
@@ -347,15 +350,16 @@ span{
 
 
 
-  /* projects section */
+  /* Projects section */
   #projects{
     background-color:#011f41 ;
   }
   .projects-heading h1{
     color: rgb(255, 255, 255);
-    margin: 20px 0 0 80px;
+    margin-left: 80px;
     letter-spacing: 0.15em;
-    text-align: left;
+    text-align: center;
+    padding-top: 60px;
   }
  
   .card-container{
@@ -449,4 +453,73 @@ span{
 .card-container .card .face.face2 .content a:hover{
     background: #333;
     color: #fff;
+}
+
+/* Contact section */
+#contacts{
+  background-color:rgb(255, 255, 255);
+}
+.contact-heading h1{
+  color: #011f41;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin-left: 80px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  font-size: 40px;
+  
+
+}
+.fa-location-dot{
+  color: #011f41;
+  margin: 0 15px 0 280px;
+}
+.location-icon h2{
+  color: #011f41;
+  display: inline-block;
+  
+}
+#email-icon{
+  color: #011f41;
+  margin: 0 15px 0 280px;
+  
+}
+.email-icon h2{
+  color: #011f41;
+  display: inline-block;
+
+}
+.email-icon h2 a{
+  text-decoration: none;
+  color: inherit;
+}
+.socials-heading{
+  color: #011f41;
+  letter-spacing: 0.15em;
+  text-align: left;
+}
+#contact-icons a{
+padding-right: 20px;
+text-align: right;
+}
+#linkedin-icon{
+  color: #011f41;
+  text-align: right;
+  font-size: 30px;
+  
+  
+}
+#github-icon{
+  color: #011f41;
+  text-align: right;
+  font-size: 30px;
+}
+
+/* Footer section */
+
+footer{
+  color:rgb(255, 255, 255);
+  text-align: center;
+  font: inherit;
+  padding: 20px;
 }
